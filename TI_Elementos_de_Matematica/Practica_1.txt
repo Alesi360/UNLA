@@ -1,0 +1,109 @@
+1. Distinguir cuáles de las siguientes expresiones son proposiciones:
+    a. 10 es un número primo;
+    b. ¡Bienvenido al Ingreso de Sistemas!;
+    c. El 2 no es un número primo;
+    d. ¿Está fría la mañana?;
+    e. Es necesario estudiar las guías teóricas y es importante resolver seriamente las actividades propuestas;
+    f. Hace calor o la estufa está prendida;
+
+Respuestas:
+    a. Es una proposición;
+    b. No es una proposición;
+    c. Es una proposición;
+    d. No es una proposición;
+    e. Es una proposición;
+    f. Es una proposición;
+
+2. Escribir la negación de cada proposición del ejercicio anterior;
+
+Respuestas:
+    a. 10 no es un número primo;
+    c. El 2 es un número primo;
+    e. No es necesario estudiar las guías teóricas o no es importante resolver seriamente las actividades propuestas;
+    f. No hace calor y la estufa no está prendida;
+
+3. Considerando que la proposición p es V (verdadera) y que la proposición q es F (falsa), determinar el valor de verdad de:
+    a. NOT p;
+    b. NOT q;
+    c. q AND p;
+    d. p AND q;
+    e. p OR q;
+    f. q OR p;
+
+Respuestas:
+    a. Falsa;
+    b. Verdadera;
+    c. Falsa;
+    d. Falsa;
+    e. Verdadera;
+    f. Verdadera;
+
+4. Considerando las proposiciones p, q y r, dar la expresión coloquial que se pide:
+    p: Ayer fue domingo;
+    q: Hoy hace calor;
+    r: Estoy estudiando matemática;
+        a. NOT r;
+        b. p AND q;
+        c. r OR q;
+        d. r AND (NOT q);
+        e. NOT (p AND r);
+        f. (p AND q) OR r;
+        g. (NOT p) OR (r AND q);
+
+Respuestas:
+    a. No estoy estudiando matemática;
+    b. Ayer fue domingo y hoy hace calor;
+    c. Estoy estudiando matemática u hoy hace calor;
+    d. Estoy estudiando matemática y hoy no hace calor;
+    e. Ayer no fue domingo o no estoy estudiando matemática;
+    f. Ayer fue domingo y hoy hace calor, o estoy estudiando matemática;
+    g. Ayer no fue domingo, o estoy estudiando matemática y hoy hace calor;
+
+5. Resolver los siguientes predicados lógicos paso a paso para obtener el valor de p:
+
+    a. 
+    Entero a <- 1;
+    Entero b <- 2;
+    Entero c <- 5;
+    Boolean p <- (NOT (a > b)) AND (c>b);
+
+        NOT (1 > 2) AND (5 > 2);
+        NOT (F) AND V;
+        V AND V;
+        V;
+
+    b.
+    Entero a <- 4;
+    Entero b <- (-2);
+    Entero c <- 7;
+    Boolean p <- (c = (a + b) AND (NOT (a < c)));
+
+        7 = (4 + (-2)) AND (NOT (4 < 7));
+        7 = 2 AND NOT (V);
+        F AND F;
+        F;
+
+    c.
+    Entero a <- 5;
+    Entero b <- 7;
+    Boolean p <- ((a MOD 2) = 0) OR ((b MOD 3) = 1);
+
+        ((5 MOD 2) = 0) OR ((7 MOD 3) = 1);
+        (1 = 0) OR (1 = 1);
+        F OR V;
+        V;
+
+    d.
+    Entero a <- 9;
+    Entero c <- 4;
+    Boolean p <- (NOT ((c MOD 2) = 0)) AND ((a MOD 3) =/= 0);
+
+        (NOT ((4 MOD 2) = 0)) AND ((9 MOD 3) =/= 0);
+        (NOT (0 = 0)) AND (0 =/= 0);
+        (NOT V AND F);
+        F AND F;
+        F;
+
+
+
+

@@ -1,0 +1,198 @@
+1. Resolver por los métodos sustitución y/o igualación los siguientes sistemas de ecuaciones.
+    a.
+        -2x + 3y = 17;
+        7x + 4y = -16;
+
+        -2x + 3y = 17;
+        3y = 17 + 2x;
+        y = (17 + 2x) / 3;
+
+        7x + 4 ((17 + 2x) / 3) = -16;
+        7x + (68 + 8x) / 3 = -16;
+        (21x + 68 + 8x) / 3 = -16;
+        29x + 68 = -16 * 3;
+        29x = -48 - 68;
+        x = -116 / 29;
+        x = -4;
+        y = (17 + 2 * (-4)) / 3 = 3;
+        x = -4, y = 3;
+
+
+    b.
+        6x + 2y = 4;
+        -9x - 7y = 22;
+
+        6x + 2y = 4;
+        6x = 4 - 2y;
+        x = (4 - 2y) / 6;
+
+        -9((4 - 2y) / 6) - 7y = 22;
+        (-36 + 18y) / 6 - 42y / 6 = 22;
+        -36 - 24y = 22 * 6;
+        -24y = 132 + 36;
+        y = -7;
+        x = (4 - 2 * (-7)) / 6 = 3;
+        x = 3, y = -7
+
+
+2.Problemas:
+    a.  La edad de un hijo es un cuarto de la de su padre. Hace 6 años, la edad del padre era 10 veces la del hijo ¿Qué edad tiene actualmente cada uno?;
+        y = x/4;
+        x - 6 = 10(y - 6);
+
+        x - 6 = 10x/4 - 60;
+        x + 54 = 10x/4;
+        4x + 216 = 10x;
+        216 = 6x;
+        x = 36;
+        y = 36/4 =  9;
+        Edad padre = 36, Edad hijo = 9;
+    
+    b. En una alcancía hay billetes de $5 y de $20, si la cantidad de billetes es 22; ¿Cuántos billetes de $5 y de $20 hay si la alcancía tiene $305?;
+    5x + 20y = 305;
+    x + y = 22;
+    
+    x + y = 22;
+    x = 22 - y;
+    5(22 - y) + 20y = 305;
+    110 - 5y + 20y = 305;
+    15y = 305 - 110;
+    y = 195/15;
+    y = 13;
+    x = 22 - 13 = 9;
+    Billetes $20 = 13, Billetes $5 = 9;
+
+
+    c. En cierto rombo se verifica que dos ángulos consecutivos difieren en 34° ¿Cuáles son esos ángulos?
+       x + y = 180;
+       y = x - 34;
+
+       x + x - 34 = 180;
+       2x = 180 + 34;
+       x = 214 / 2;
+       x = 107;
+       y = 107 - 34 = 73;
+       x = 107, y = 73;
+
+    
+    d. Un hotel tiene habitaciones dobles y simples. Tiene un total de 50 habitaciones y de 87 camas ¿Cuántas habitaciones tiene de cada tipo?;
+        2 * x + y = 87;
+        x + y = 50;
+
+        x = 50 - y;
+        2 * (50 - y) + y = 87;
+        100 - 2y + y = 87;
+        -y = 87 - 100;
+        y = 13;
+        x = 50 - 13 = 37;
+        Dobles = 37, Simples = 13;
+
+    
+    e. ¿Cuál es el número, cuya suma de sus dos cifras es 8 y si se cambia el orden de sus cifras, se obtiene otro número que vale 17 unidades menos que el doble del número de partida?;
+        x + y = 8;
+        10y + x = (10x + y) * 2 - 17;
+
+        y = 8 - x;
+        10 * (8 - x) + x = (10x + 8 - x) * 2 - 17;
+        80 - 9x = 18x + 16 - 17;
+        80 + 1 = 18x + 9x;
+        81 / 27 = x;
+        x = 3;
+        y = 8 - 3 = 5;
+        35;
+
+    
+    f. El perímetro de un triángulo isósceles es de 18 cm. Cada uno de los lados iguales es 3 unidades mayor que la base. ¿Cuánto vale cada lado?;
+        2x + y = 18;
+        x = y + 3;
+        
+        2(y + 3) + y = 18;
+        3y + 6 = 18;
+        y = 12 / 3;
+        y = 4;
+        x = 4 + 3 = 7;
+        Base = 4, Lados = 7;
+
+
+    g. Un trapecio de 3 cm de altura tiene un área de 15 cm² y la base mayor mide 2 cm más que la menor. ¿Cuánto valen las bases?;
+        (x + y) / 2 * 3 = 15;
+        x = y + 2;
+
+        (y + 2 + y) / 2 * 3 = 15;
+        (2y + 2) / 2 = 15 / 3;
+        y + 1 = 5;
+        y = 4;
+        x = 4 + 2 = 6;
+        x = 6, y = 4;
+
+
+    h. Descomponer el número 500 en dos partes, de modo que al dividir la mayor entre la menor se obtenga el cociente 7 y de resto 20;
+        x + y = 500;
+        x = 7y + 20;
+
+        x = 500 - y;
+        500 - y = 7y + 20;
+        500 - 20 = 8y;
+        480 / 8 = y;
+        y = 60;
+        x = 500 - 60 = 440;
+        x = 440, y = 60;
+
+
+    i.  Dos números suman 44. Si el mayor lo dividimos entre tres y el segundo entre 4, los nuevos números obtenidos se diferencian en 3 unidades. Hallar dichos números;
+        x + y = 44;
+        x / 3 = y / 4 + 3;
+
+        x = 44 - y;
+        (44 - y) / 3 = y / 4 + 3;
+        44 - y = 3y / 4 + 9;
+        44 - 9 = 3y / 4 + 4y / 4;
+        35 = 7y / 4;
+        35 * 4 = 7y;
+        y = 140 / 7;
+        y = 20;
+        x = 44 - 20 = 24;
+        x = 24, y = 20;
+
+    
+    j. En una reunión de chicos y chicas el número de éstas excede en 25 el de aquéllos. Salen de la reunión 10 chicas y 10 chicos, y ahora queda doble el número de 
+    chicas que de chicos. ¿Cuántos chicos y chicas había en la reunión?;
+        x - 25 = y;
+        (x - 10) = 2 * (y - 10);
+
+        x - 10 = 2y - 20;
+        x - 10 = 2x - 50 - 20;
+        x - 2x = -70 + 10;
+        -x = -60;
+        x = 60;
+        y = 60 - 25 = 35;
+        x = 60, y = 35;
+
+
+    k. Un comerciante compra dos relojes por $3000, y los vende a $3225. ¿Cuánto pagó por cada reloj si en la venta del primero ganó el 20% y en la del segundo perdió un 5%?;
+        x + y = 3000;
+        x * 1.2 + y * 0.95 = 3225;
+
+        y = 3000 - x;
+        1.2x + (3000 - x) 0.95 = 3225;
+        1.2x + 2850 - 0.95x = 3225;
+        0.25x = 3225 - 2850;
+        x = 375 / 0.25;
+        x = 1500;
+        y = 3000 - 1500 = 1500;
+        x = $1500, y = $1500;
+
+
+
+        
+
+
+
+
+    
+
+
+
+    
+
+    

@@ -1,0 +1,251 @@
+1. Diseñar un algoritmo para que dado un número a, determine si es múltiplo de otro número b.
+
+Algoritmo EsMultiplo
+
+    // Dado un número, determinar si es múltiplo de otro número dado.
+
+    Definir a, b Como Entero;
+
+    Escribir "Ingrese el primer número entero:";
+    Leer a;
+    Escribir "Ingrese el segundo número entero:";
+    Leer b;
+
+    Si (a MOD b = 0)
+        Escribir a, " es múltiplo de ", b;
+    Sino
+        Escribir a, " no es múltiplo de ", b;
+    FinSi;
+
+FinAlgoritmo
+
+
+2. Escribir el algoritmo para que dado un año determinar si es bisiesto.
+
+Algoritmo EsBisiesto
+
+    // Dado un año, determinar si es bisiesto.
+
+    Definir año Como Entero;
+
+    Escribir "Ingrese el año:";
+    Leer año;
+
+    Si ((año MOD 4 = 0 Y año MOD 100 != 0) O año MOD 400 = 0)
+        Escribir "Es bisiesto";
+    Sino
+        Escribir "No es bisiesto";
+    FinSi
+
+FinAlgoritmo
+
+
+3. Escribir un algoritmo, que lea las variables a y b y ordene el contenido de las mismas en forma ascendente, de manera que cuando imprima a y b
+en a estará el valor menor, por lo tanto si a es mayor que b se deberá intercambiar el contenido de las variables.
+
+Algoritmo OrdenarMenorMayor
+
+    // Dado dos valores, ordenarlos de menor a mayor.
+
+    Definir a, b, temporal Como Entero;
+
+    Escribir "Ingrese el primer número:";
+    Leer a;
+    Escribir "Ingrese el segundo número:";
+    Leer b;
+
+    temporal <- b;
+
+    Si (a > b)
+        b <- a;
+        a <- temporal;
+    FinSi
+    
+    Escribir a, ", ", b;
+
+FinAlgoritmo
+
+
+4. Diseñar un algoritmo para simular tirar una moneda. Mostrar CARA o CECA.
+
+Algoritmo CaraCeca
+ 
+    // Simular tirar una moneda
+
+    Definir moneda Como Entero;
+
+    moneda <- Azar (2);
+
+    Si (moneda = 0)
+        Escribir "CARA";
+    Sino
+        Escribir "CECA";
+    FinSi
+
+FinAlgoritmo    
+
+
+5. Diseñar un algoritmo para simular tirar un dado. Mostrar los mensajes PAR o IMPAR según la cara obtenida.
+
+Algoritmo DadoParImpar
+
+    // Simular un dado y verificar si es par o impar.
+
+    Definir dado Como Entero;
+
+    dado <- Aleatorio (1, 6);
+
+    Si (dado MOD 2 = 0)
+        Escribir "PAR";
+    Sino
+        Escribir "IMPAR";
+    FinSi
+
+FinAlgoritmo
+
+
+6. Diseñar un algoritmo dado un número (a) determine si es múltiplo de 3 y de 5.
+
+Algoritmo MultiploTresCinco
+
+    // Dado un número, determinar si es múltiplo de 3 y de 5.
+
+    Definir numero Como Entero;
+
+    Escribir "Ingrese un número:";
+    Leer numero;
+
+    Si numero MOD 3 = 0 Y numero MOD 5 = 0
+        Escribir "Es múltiplo de 3 y de 5.";
+    Sino
+        Escribir "No es múltiplo de 3 y de 5.";
+    FinSi
+
+FinAlgoritmo
+
+
+7. Diseñar un algoritmo dado un número (a) determine si es múltiplo de 2 pero no de 5.
+
+Algoritmo MultiploDosNoCinco
+  
+    // Dado un número, determinar si es múltiplo de 2 pero no de 5.
+
+    Definir numero Como Entero;
+
+    Escribir "Ingrese un número:";
+    Leer numero;
+
+    Si numero MOD 2 = 0 Y numero MOD 5 <> 0
+        Escribir "Es múltiplo de 2 pero no de 5.";
+    Sino
+        Escribir "No es múltiplo de 2 o es múltiplo de 5.";
+    FinSi
+
+FinAlgoritmo
+
+
+8. Diseñar un algoritmo dado un número (a) determine si es múltiplo de 3 o de 7.
+
+Algoritmo MultiploTresOSiete
+
+    // Dado un número, determinar si es múltiplo de 3 o de 7.
+
+    Definir numero Como Entero;
+
+    Escribir "Ingrese un número:";
+    Leer numero;
+
+    Si numero MOD 3 = 0 O numero MOD 7 = 0
+        Escribir "Es múltiplo de 3 o de 7.";
+    Sino
+        Escribir "No es múltiplo de 3 o de 7.";
+    FinSi
+
+FinAlgoritmo
+
+
+9. Dados a, b y c escribir un algoritmo que imprima a,b y c, teniendo en cuenta previamente ordenar en forma ascendente el contenido de las variables.
+
+Algoritmo OrdenarTresVariables
+    
+    // Dadas tres variables, ordenar de menor a mayor.
+
+    Definir a, b, c, temporal Como Entero;
+
+    Escribir "Ingrese el primer número.";
+    Leer a;
+    Escribir "Ingrese el segundo número.";
+    Leer b;
+    Escribir "Ingrese el tercer número.";
+    Leer c;
+
+    Si a > b
+        temporal <- a;
+        a <- b;
+        b <- temporal;
+    FinSi
+    Si a > c
+        temporal <- a;
+        a <- c;
+        c <- temporal;
+    FinSi
+    Si b > c 
+        temporal <- b;
+        b <- c;
+        c <- temporal;
+    FinSi
+
+    Escribir a, ", ", b, ", ", c;
+
+FinAlgoritmo
+
+10. Escribir el algoritmo para emitir un pre-ticket dado el precio de un artículo y la cantidad de unidades. Si la cantidad de artículos supera las 4 unidad se aplicará el 5% de descuento.
+
+Algoritmo CincoDescuento
+
+    // Dado precio y cantidad, considerando la posibilidad de aplicar descuento, determinar cual es el precio final.
+
+    Definir cantidad Como Entero;
+    Definir precio, total Como Real;
+
+    Escribir "Ingrese el precio del producto:";
+    Leer precio;
+    Escribir "Ingrese la cantidad de unidades:";
+    Leer cantidad;
+
+    total <- precio * cantidad;
+
+    Si cantidad > 4
+       total <- total * 0.95;
+    FinSi
+
+    Escribir "El precio final es ", total, ".";
+
+FinAlgoritmo
+
+
+11. Escribir el algoritmo para emitir un pre-ticket dado el precio de un artículo y la cantidad de unidades. Calcular el descuento (3x2) si cada tres unidades de compra tendrá un descuento
+del importe de una unidad; por ejemplo: Si compra 7 latas de tomates a $30. -el subtotal es $210,-el Descuento (3x2) es $60 y el total pre-ticket: $150.-
+
+Algoritmo DescuentoTresPorDos
+
+    // Dado el precio y la cantidad de un producto, calcular el descuento 3x2.
+
+    Definir cantidad, descuento Como Entero;
+    Definir precio, totalPre, valorDescuento, totalFinal Como Real;
+
+    Escribir "Ingrese el precio de producto:";
+    Leer precio;
+    Escribir "Ingrese la cantidad de unidades:";
+    Leer cantidad;
+
+    totalPre <- precio * cantidad;
+    descuento <- Trunc(cantidad / 3);
+    valorDescuento <- precio * descuento;
+    totalFinal <- totalPre - valorDescuento;
+
+    Escribir "El subtotal es $", totalPre;
+    Escribir "El descuento 3x2 es $", valorDescuento;
+    Escribir "El total pre-ticket es $", totalFinal;
+
+FinAlgoritmo

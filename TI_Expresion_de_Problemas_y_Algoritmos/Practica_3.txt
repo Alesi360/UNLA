@@ -1,0 +1,180 @@
+1. Realizar la prueba de escritorio para el algoritmo Contar_V3 con un escenario en el que contarHasta = 15.
+
+
+
+
+2. Realizar un algoritmo que reciba un número base y otro exponente y devuelva base a la potencia de exponente sin emplear la función
+de elevación a potencia del pseudocódigo (a^b).
+
+Algoritmo PotenciaExponente
+
+    // Dado un número y su exponente, calcular la potencia.
+
+    Definir base, exponente, contador Como Entero;
+    Definir acumulador Como Real;
+
+    Escribir "Ingrese el número base:";
+    Leer base;
+    Escribir "Ingrese el exponente:";
+    Leer exponente;
+
+    acumulador <- 1;
+
+    Si exponente >= 0 
+        Para contador <- 1 Hasta exponente Con Paso 1
+            acumulador <- acumulador * base;
+        FinPara
+    Sino
+        exponente <- exponente * (-1);
+        Para contador <- 1 Hasta exponente Con Paso 1
+            acumulador <- acumulador * base;
+        FinPara
+        acumulador <- 1 / acumulador;
+    FinSi
+
+    Escribir base, "^", exponente, " = ", acumulador;
+
+FinAlgoritmo 
+
+
+3. Realizar un algoritmo que pida dos años y devuelva los años bisiestos entre los mismos.
+
+Algoritmo AñosBisiestosEntreDos
+
+    // Dados dos años, devolver los años bisiestos entre ellos.
+
+    Definir año1, año2, contador Como Entero;
+
+    Escribir "Ingrese el primer año:";
+    Leer año1;
+    Escribir "Ingrese el segundo año:";
+    Leer año2;
+
+    contador <- año1;
+
+    Si año1 > año2
+        año1 <- año2;
+        año2 <- contador;
+    FinSi
+
+    Para contador <- año1 Hasta año2 Con Paso 1
+        Si (contador MOD 4 = 0 Y contador MOD 100 <> 0) O contador MOD 400 = 0
+            Escribir contador, " es bisiesto";
+        FinSi
+    FinPara
+
+FinAlgoritmo        
+
+
+4. El factorial de un número natural n, denotado como n!, es el producto de ese número por todos sus antecesores. Escribir un algoritmo
+que pida el valor de n y nos devuelva n!. Además, por definición, !0 = 1.
+
+Algoritmo Factorial
+    
+    // Dado un número natural, calcular su factorial.
+
+    Definir n, nFactorial, contador Como Entero;
+
+    Escribir "Ingrese un número:";
+    Leer n;
+
+    nFactorial <- 1;
+
+    Para contador <- 1 Hasta n Con Paso 1
+        nFactorial <- nFactorial * contador;
+    FinPara
+
+    Escribir n, "! = ", nFactorial;
+
+FinAlgoritmo
+
+5. Realizar un algoritmo para tirar n veces un dado, obtener la cantidad de veces que salió una cara con número par y cuántas con número impar.
+
+Algoritmo DadoVecesParImpar
+
+    // Dado un número, tirar un dado esa cantidad de veces y determinar la cantidad de veces que salió un número impar y uno par;
+
+    Definir n, dado, contador, pares, impares Como Entero;
+
+    Escribir "Ingrese la cantidad de veces que tirará el dado:";
+    Leer n;
+
+    pares <- 0;
+    impares <- 0;
+
+    Para contador <-1 Hasta n Con Paso 1
+        dado <- Aleatorio (1, 6);
+        Si dado MOD 2 = 0
+            pares <- pares + 1;
+        Sino
+            impares <- impares + 1;
+        FinSi
+    FinPara
+
+    Escribir "Salieron ", pares, " caras pares y ", impares, " caras impares.";
+
+FinAlgoritmo
+
+
+6. Realizar un algoritmo para simular tirar una moneda n veces y luego calcular la probabilidad de que salga una cara al arrojar una moneda con 
+la siguiente fórmula: P(cara) = cantCaras/n y la probabilidad de que salga una seca P(seca) = cantSeca / n.
+
+Algoritmo TirarMonedaProbabilidad
+
+    // Dado un número, simular tirar una moneda esa cantidad de veces y determinar la probabilidad de que salga cara y seca.
+
+    Definir n, moneda, contador, tCara, tSeca Como Entero;
+    Definir pCara, pSeca Como Real;
+
+    Escribir "Ingrese el número de tiradas:";
+    Leer n;
+
+    tCara <- 0;
+    tSeca <- 0;
+
+    Para contador <- 1 Hasta n Con Paso 1
+        moneda <- Azar (2);
+        Si moneda = 0
+            tCara <- tCara + 1;
+        Sino
+            tSeca <- tSeca + 1;
+        FinSi
+    FinPara
+
+    pCara <- tCara / n;
+    pSeca <- tSeca / n;
+
+    Escribir "Hay un ", pCara * 100, "% de probabilidad de que salga cara y un ", pSeca * 100, "% de probabilidad de que salga seca.";
+
+FinAlgoritmo           
+
+
+7. Escribir en pseudocódigo el algoritmo para generar la sucesión de Fibonacci hasta n primeros términos
+
+Algoritmo Fibonacci
+
+    // Dado un número, realizar la sucesión de Fibonacci hasta ese término.
+
+    Definir n, tFibonacci, anterior1, anterior2, contador Como Entero;
+
+    Escribir "Ingrese un número:";
+    Leer n;
+
+    anterior1 <- 1;
+    anterior2 <- 0;
+
+    Si n >= 1;
+        Escribir anterior1;
+    FinSi
+
+    Para contador <- 2 Hasta n Con Paso 1
+        tFibonacci <- anterior1 + anterior2;
+        anterior2 <- anterior1;
+        anterior1 <- tFibonacci;
+        Escribir tFibonacci;
+    FinPara
+
+FinAlgoritmo
+
+
+

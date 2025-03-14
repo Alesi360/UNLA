@@ -1,0 +1,72 @@
+1. En los restos arqueológicos de una civilización que veneraba a dioses de la naturaleza, se encontraron diversas tablillas 
+grabadas con combinaciones de cuatro elementos: Aires <<, Agua >>, Tiera ʭ, Fuego ∆. Años más tarde, los investigadores descifraron 
+que estos elementos representaban un sistema de numeración posicional en base 4, donde cada elemento corresponde a un dígito:
+
+Aire << = 0, Agua >> = 1, Tierra ʭ = 2, Fuego ∆ = 3
+
+    a. Convierta el número decimal 1399 al sistema de numeración de elementos. Exprese su respuesta representando el número con los símbolos propios de dicho sistema.
+
+    1399/4 = 349/4 = 87/4 = 21/4 = 5/4 = 1/4 = 0 
+    111313
+    >> >> >> ∆ >> ∆
+
+    b. Convierta el número ∆>>ʭ<< a decimal.
+
+    3120 -> 0 + 2 * 4 + 1 * 4^2 + 3 * 4^3 = 216
+
+2. Realizar las siguientes operaciones:
+
+    a. Convertir a binario los siguientes números: i. 91(10) ii. 2A(16) iii. 32(8).
+
+        i. 91(10)
+        91/2 = 45/2 = 22/2 = 11/2 = 5/2 = 2/2 = 1/2 = 0
+        1011011 
+
+        ii. 2A(16)
+        2 * 16 + 10 * 1 = 42
+        42/2 = 21/2 = 10/2 = 5/2 = 2/2 = 1/2 = 0
+        101010
+
+        iii. 32(8)
+        3 * 8 + 2 = 26
+        26/2 = 13/2 = 6/2 = 3/2 = 1/2 = 0
+        11010
+
+    b. Restar en binario, usando complemento a 2, el resultado de la conversión i y ii del punto anterior.
+
+        1011011(7bits) - 101010(6bits)
+        1011011 - 0101010
+        1011011 + (1010101 + 1)
+        1011011 + 1010110 = 10110001
+        110001
+
+    c. Sumar en binario, el resultado de iii y i del punto a.
+        
+        11010 + 1011011
+        0011010 + 1011011 = 1110101
+
+    d. Multiplicar en binario, el resultado de b y c.
+
+        110001 * 1110101
+        0110001 * 1110101
+        0110001 + 01100100 + 01100010000 + 011000100000 + 0110001000000
+        0000000110001 + 0000011000100 + 0001100010000 + 0011000100000 + 0110001000000
+        0000011110101 + 0001100010000 + 0011000100000 + 0110001000000
+        0010000000101 + 0011000100000 + 0110001000000
+        0101000100101 + 0110001000000 = 1011001100101
+
+3. Exprese en binario de 6 bits, el complemento a 1, los siguientes números: a. -15(16) b. -98(8)
+
+    a. -15(16)
+    15 -> 1 * 16 + 5 = 21
+
+    21/2 = 10/2 = 5/2 = 2/2 = 1/2 = 0
+    10101 (5 bits) -> 010101
+    101010
+
+    b. -98(8)
+    98 no existe en base 8
+
+4. Exprese en binario de 8bits, con el método de complemento a 2, los siguientes números: a. -15(10) b. -98(10) c. -128(10)
+
+    a. 

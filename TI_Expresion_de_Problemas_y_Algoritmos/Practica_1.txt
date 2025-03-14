@@ -1,0 +1,148 @@
+1. Diseñar un algoritmo que utilice dos variables una a y b calcule la suma, resta, multiplicaciòn y divisiòn,
+en la sentencias de salida que tengan este formato ejemplo: 3 + 4 = 7. Realizar la prueba de escritorio para a = 27 y b = -5;
+
+Algoritmo OperacionesDosVariables
+    
+    // Dados dos nùmeros calcular la suma, resta, multiplicaciòn y divisiòn
+
+    Definir a, b Como Entero;
+    Definir tSuma, tResta, tMultiplicacion Como Entero;
+    Definir tDivision Como Real;
+
+    Escribir "Ingrese el primer nùmero.";
+    Leer a;
+    Escribir "Ingrese el segundo nùmero.";
+    Leer b;
+
+    tSuma <- a + b;
+    tResta <- a - b;
+    tMultiplicacion <- a * b;
+    tDivision <- a / b;
+
+    Escribir a, " + ", b, " = ", tSuma;
+    Escribir a, " - ", b, " = ", tResta;
+    Escribir a, " * ", b, " = ", tMultiplicacion;
+    Escribir a, " / ", b, " = ", tDivision;
+
+FinAlgoritmo
+
+Paso |a |b | tSuma | tResta | tMultiplicacion | tDivision |        Entrada/Salida        | Comentarios
+1    |- |- |-      |-       |-                |-          |< Ingrese el primer número    |-
+2    |27|- |-      |-       |-                |-          |> 27                          |-
+3    |27|- |-      |-       |-                |-          |< Ingrese el segundo número   |-
+4    |27|-5|-      |-       |-                |-          |> -5                          |-
+5    |27|-5|22     |-       |-                |-          |-                             |tSuma = 27 + (-5)
+6    |27|-5|22     |32      |-                |-          |-                             |tResta = 27 - (-5)
+7    |27|-5|22     |32      |-135             |-          |-                             |tMultiplicacion = 27 * (-5)
+8    |27|-5|22     |32      |-135             |-5.4       |-                             |tDivision = -5.4
+9    |27|-5|22     |32      |-135             |-5.4       |< 27 + -5 = 22                |-
+10   |27|-5|22     |32      |-135             |-5.4       |< 27 - -5 = 32                |-
+11   |27|-5|22     |32      |-135             |-5.4       |< 27 * -5 = -135              |-
+12   |27|-5|22     |32      |-135             |-5.4       |< 27 / -5 = -5.4              |-
+
+
+2. Diseñar un algoritmo que dado el radio de un círculo calcule el área y la longitud de la circunferencia. Realizar la prueba de escritorio para r = 3;
+    
+Algoritmo AreaLongitudCircuferencia
+
+    // Dado un radio, calcular el área y longitud de la circunferencia
+
+    Definir r, area, longitud Como Real;
+
+    Escribir "Ingrese el radio:";
+    Leer r;
+
+    area <- pi * r^2;
+    longitud <- 2 * pi * r;
+  
+    Escribir "El área del círculo es ", area, " y su longitud es ", longitud;
+
+FinAlgoritmo
+
+
+3. Diseñar un algoritmo que dados los catetos de un triángulo rectángulo, calcule la hipotenusa, el área y el perímetro. Realizar la prueba de escritorio para catetoMenor = 3 y catetoMayor = 5;
+
+Algoritmo TrianguloRectangulo
+
+    // Dado los catetos de un triángulo rectángulo, calcular hipotenusa, área y perímetro.
+
+    Definir catetoMenor, catetoMayor Como Reales;
+    Definir hipotenusa, area, perimetro Como Reales;
+
+    Escribir "Ingrese el cateto menor:";
+    Leer catetoMenor;
+    Escribir "Ingrese el cateto mayor";
+    Leer catetoMayor;
+
+    hipotenusa <- Raiz(catetoMenor^2 + catetoMayor^2);
+    area <- (catetoMenor * catetoMayor) / 2;
+    perimetro <- catetoMenor + catetoMayor + hipotenusa;
+
+    Escribir "La hipotenusa del triángulo es ", hipotenusa, ", su área es ", area," y su perímetro es ", perimetro;
+
+FinAlgoritmo
+
+
+4. Diseñas un algoritmo que lea dos variables lógicas p y q. Calcule en tres variables NO p, No q, p Y q y p O q y por último muestre los resultados.
+
+Algoritmo TablaVerdad
+
+    // Dado dos variables lógicas calcule No p, No q, p Y q y p O q
+
+    Definir p, q Como Logico;
+    Definir noP, noQ, yPQ, oPQ Como Logico;
+
+    Escribir "Ingrese el primer valor de verdad:";
+    Leer p;
+    Escribir "Ingrese el segundo valor de verdad:";
+    Leer q;
+
+    noP <- NO p;
+    noQ <- NO q;
+    yPQ <- p AND q;
+    oPQ <- p OR q;
+
+    Escribir "NO p = ", noP;
+    Escribir "NO q = ", noQ;
+    Escribir "p Y q = ", yPQ;
+    Escribir "p O q = ", oPQ;
+
+FinAlgoritmo
+
+
+5. Diseñar un algoritmo que dados dos números cualquiera, calcule el resto de la división entre ambos, finalmente imprima los números dados y el resultado.
+
+Algoritmo RestoDivision
+
+    // Dado dos números, calcular el resto.
+
+    Definir primerN, segundoN Como Entero;
+    Definir resto Como Real;
+
+    Escribir "Ingrese el primer número:";
+    Leer primerN;
+    Escribir "Ingrese el segundo número distinto de 0:";
+    Leer segundoN;
+
+    resto <- primerN MOD segundoN;
+
+    Escribir "El resto de la división ", primerN, " / ", segundoN, " es ", resto;
+
+FinAlgoritmo
+
+
+6. Diseñar un algoritmo para simular tirar dos dados y sumar las dos caras resultantes. Mostrar los números que salieron y su suma.
+
+Algoritmo SumaDados
+    
+    // Tirar dos dados, sumar las caras.
+
+    Definir dado1, dado2, sumaT Como Entero;
+
+    dado1 <- Aleatorio (1, 6);
+    dado2 <- Aleatorio (1, 6);
+    sumaT <- dado1 + dado2;
+
+    Escribir "¡Conseguiste un ", dado1, " y un ", dado2, " dando un total de ", sumaT,"!"
+
+FinAlgoritmo

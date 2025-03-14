@@ -1,0 +1,167 @@
+1. La suma de tres números consecutivos es 48, ¿Cúanto vale cada número?;
+    a + b + c = 48 con a = x, b = x + 1, c = x + 2;
+    (x) + (x + 1) + (x + 2) = 48;
+    3x + 3 = 48;
+    3x = 48 - 3;
+    x = 45 / 3;
+    x = 15;
+    a = 15, b = 16, c = 17;
+    
+
+2. La suma de tres números consecutivos es 312. Encontrar dichos números;
+    a + b + c = 312 con a = x, b = x + 1, c = x + 2;
+    (x) + (x + 1) + (x + 2) = 312;
+    3x + 3 = 312;
+    3x = 312 - 3;
+    x = 309 / 3;
+    x = 103;
+    a = 103, b = 104, c = 105;
+
+
+3. La diferencia de dos números es 36 y un medio del mayor excede en dos al menor. Determina los números;
+    a - b = 36 con a > b ya que si b > a entonces a - b = negativo y 36 no es negativo;
+    b = a/2 - 2;
+    a - a/2 - 2 = 36;
+    2a/2 - a/2 - 2 = 36;
+    a/2 - 2 = 36;
+    a/2 = 36 - 2;
+    a = 34 * 2;
+    a = 68;
+    b = 68 / 2 - 2;
+    b = 34 - 2 = 32;
+    a = 68, b = 32;  
+
+
+4. El cuadrado de un número, aumentado en 12, menos la mitad del número; es igual al cuadrado del número, menos trece medios
+del número. ¿Cuál es el número?;
+    x^2 + 12 - x/2 = x^2 - 13x/2;
+    x^2 - x/2 - x^2 = -13x/2 - 12;
+    -x/2 + 13x/2 = -12;
+    12x/2 = -12;
+    12x = -12 * 2;
+    x = -24/12;
+    x = -2;
+
+
+5. Un número es la tercera parte de otro, si ambos se aumentan en 10, el mayor será el doble del menor. Determina los números;
+    y = x/3 entonces x > y;
+    x + 10 = 2 * (y + 10);
+    x + 10 = 2 * (x/3 + 10);
+    x + 10 = 2x/3 + 20;
+    x - 2x/3 = 20 - 10;
+    3x/3 - 2x/3 = 10;
+    x/3 = 10;
+    x = 10 * 3;
+    x = 30;
+    y = 30/3 = 10;
+    x = 30, y = 10;
+     
+
+6. La suma de tres números es 45, el mayor excede en 5 al mediano y en 10 al menor. Encuentra los números.
+    x > y > z donde y = x - 5, z = x - 10;
+    x + y + z = 45;
+    x + x - 5 + x - 10 = 45;
+    3x - 15 = 45;
+    3x = 45 + 15;
+    x = 60 / 3;
+    x = 20;
+    y = 20 - 5 = 15;
+    z = 20 - 10 = 10;
+    x = 20, y = 15, z = 10;
+
+7. En un número de dos cifras el dígito de las decenas es 4 menos que el dígito de las unidades. Si los dígitos se invierten, 
+el número resultante es el triple más 6 del número original. Encuentra el número;
+    10x + y donde x = y - 4;
+    10y + (y - 4) = 3(10(y - 4) + y) + 6;
+    11y - 4 = 3(11y - 40) + 6;
+    11y - 4 = 33y - 120 + 6;
+    11y - 33y = -114 + 4;
+    y = -110/-22;
+    y = 5;
+    x = 5 - 4 = 1;
+    15;
+
+
+8. La suma de los dígitos de una cantidad de dos cifras es 9. Si los dígitos se invierten, el número que resulta excede en 9 
+al número original, ¿Cuál es el número?;
+    x + y = 9;
+    x = 9 - y;
+    10y + x = 10x + y + 9;
+    10y + 9 - y = 10(9 - y) + y + 9;
+    9y + 9 = 90 - 10y + y + 9;
+    9y + 9 = 99 - 9y;
+    9y + 9y = 99 - 9;
+    18y = 90;
+    y = 90/18;
+    y = 5;
+    x = 9 - 5 = 4;
+    45;
+
+
+9. La suma de los dígitos de un número de dos cifras es 9. Si se resta 18 al número formado al invertir el orden de los dígitos
+del número original, el resultado es la mitad del número original, determina el número;
+    x + y = 9;
+    x = 9 - y;
+    10y + x - 18 = (10x + y)/2
+    10y + 9 - y - 18 = (90 - 10y + y)/2;
+    9y - 9 = (90 - 9y)/2;
+    18y - 18 = 90 - 9y;
+    18y + 9y = 90 + 18;
+    27y = 108;
+    y = 108/27;
+    y = 4;
+    x = 9 - 4 = 5;
+    54;
+
+
+10. En un número de tres cifras, el dígito de las unidades excede en tres al de las centenas y la suma de los tres dígitos es 7.
+Si se invierten los dígitos de las decenas y las centenas el número resultante excede en 90 al original. Encuentra el número;
+    z = x + 3, x + y + z = 7;
+    y = 7 - x - z;
+    y = 7 - x - (x + 3);
+    y = 4 - 2x;
+    100y + 10x + z = 100x + 10y + z + 90;
+    400 - 200x + 10x + x + 3= 100x + 40 - 20x + x + 3 + 90;
+    403 - 189x = 81x + 133;
+    403 - 133 = 81x + 189x;
+    270 = 270x;
+    x = 1;
+    z = 1 + 3 = 4;
+    y = 4 - 2 = 2;
+    124;
+
+
+
+11. La suma de las edades de Andrés, Carlos y Rodolfo es de 90 años. La edad de Andrés excede en 4 años a la edad de Carlos y 
+en 11 a la de Rodolfo. Determina las edades de los tres;
+    a + c + r = 90, c = a - 4, r = a - 11;
+    a + a - 4 + a - 11 = 90;
+    3a - 15 = 90;
+    3a = 90 + 15;
+    a = 105/3;
+    a = 35;
+    c = 35 - 4 = 31;
+    r = 35 - 11 = 24;
+    Andrés = 35, Carlos = 31, Rodolfo = 24;
+
+
+12. En una empresa que fabrica material médico se utiliza alcohol etílico al 10% para limpiar las áres de producción. Si al almacén
+llega un contenedor de 20 L con alcohol etílico al 15%, ¿Qué cantidad de agua se debe agregar para poder obtener el alcohol al 10%?
+    20 * 0.15 = 3L;
+    x * 0.10 = 3L;
+    x = 30L;
+    30L - 20L = 10L;
+    10L;
+
+
+13. De un depósito lleno de líquido se saca la mitad del contenido; después la tercera parte del resto y quedan aún 1600 litros.
+¿Qué capacidad tiene el depósito?;
+    (x / 2) * 2/3 = 1600;
+    (x / 2) = 1600 / (2/3);
+    x = 2400 * 2;
+    x = 4800;
+
+
+14. A un chico de 15 años, le preguntan la edad de su padre y contesta: Si al doble de mi edad se le suman 6 veces mi misma edad
+y a la mitad de esa suma se le quitan 18, resulta la edad de mi padre. ¿Cuál es la edad del padre?;
+    (2 * 15 + 6 * 15) / 2 - 18 = 42;

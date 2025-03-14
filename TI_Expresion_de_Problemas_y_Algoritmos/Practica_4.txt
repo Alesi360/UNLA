@@ -1,0 +1,132 @@
+1. Realizar la prueba de escritorio para el algoritmo AdivinaElNUmero_V2 con un escenario en el que numeroSecreto = 26 y no se adivina el número.
+
+
+
+
+2. Diseñar un algoritmo que nos pida un número del 1 al 20 y luego comience a escribir números aleatorios hasta que salga el número ingresado, en 
+cuyo caso deberá detenerse e informar cuántos números se escribieron.
+
+Algoritmo AleatorioIgual
+
+    // Dado un número del 1 al 20, escriba números aleatorios hasta llegar a ese número.
+
+    Definir numero, nAleatorio, contador Como Entero;
+
+    Escribir "Ingrese un número del 1 al 20:";
+    Leer numero;
+
+    Mientras NO(numero >= 1 Y numero <= 20)
+        Escribir "Error, ese número no es del 1 al 20.";
+        Escribir "Ingrese un número del 1 al 20:";
+        Leer numero;
+    FinMientras
+
+    nAleatorio <- Aleatorio (1, 20);
+    contador <- 1
+
+    Mientras nAleatorio != numero
+        contador <- contador + 1;
+        nAleatorio <- Aleatorio (1, 20);
+    FinMientras
+
+    Escribir "¡Ya salió el número ", numero, "! Se necesitaron ", contador, " intentos.";
+
+FinAlgoritmo
+
+
+3. Realizar un algoritmo que pida dos números, dividiendo y divisor, y que realice la división por el método de restas sucesivas. El algoritmo deberá 
+informar el cociente y el resto de la división.
+
+Algoritmo CocienteResto
+
+    // Dado dos números, realice la división por restas sucesivas. Escribir el cociente y el resto.
+
+    Definir dividiendo, divisor, resto, cociente Como Enteros;
+
+    Escribir "Ingrese el dividiendo:";
+    Leer dividiendo;
+    Escribir "Ingrese el divisor:";
+    Leer divisor;
+
+    resto <- dividiendo;
+    cociente <- 0;
+
+    Mientras resto >= divisor
+        resto <- resto - divisor;
+        cociente <- cociente + 1;
+    FinMientras
+    
+    Escribir "El cociente es ", cociente, " y el resto es ", resto;
+
+FinAlgoritmo
+
+
+4. Diseñar un algoritmo para determinar si un número n es primo.
+
+Algoritmo EsPrimo
+
+    // Determinar si un número dado es primo.
+
+    Definir n, contador Como Entero;
+    Definir primo Como Lógico
+
+    Escribir "Ingrese un número:";
+    Leer n;
+
+    primo <- Verdadero;
+
+    Si n < 2
+       primo <- Falso;
+    Sino 
+        contador <- 2;
+        Mientras (contador <= Raiz(n)) Y (primo = Verdadero)
+            Si n MOD contador = 0
+                primo <- Falso;
+            Sino
+                contador <- contador + 1;
+            FinSi
+         FinMientras
+    FinSi
+
+    Si primo = Verdadero
+        Escribir "Es primo.";
+    Sino
+        Escribir "Es compuesto.";
+    FinSi
+
+FinAlgoritmo
+
+
+5. Dados a y b números enteros positivos escribir el algoritmo para calcular el MCD(a;b)
+
+Algoritmo Mcd
+ 
+    // Dado dos números enteros positivos, calcular el MCD
+
+    Definir a, b, comunDivisor, temporal, contador Como Entero;
+
+    Escribir "Ingrese el primer número:";
+    Leer a;
+    Escribir "Ingrese el segundo número:";
+    Leer b;
+
+    Si a > b
+        temporal <- a;
+        a <- b;
+        b <- temporal;
+    FinSi
+
+    contador <- 1
+
+    Mientras contador <= a / 2
+        Si (a MOD contador = 0) Y (b MOD contador = 0)
+            comunDivisor <- contador;
+        FinSi
+        contador <- contador + 1;
+    FinMientras 
+
+    Escribir "El MCD ", a, ";", b, " es ", comunDivisor;
+
+FinAlgoritmo
+
+

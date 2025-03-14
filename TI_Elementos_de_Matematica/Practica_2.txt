@@ -1,0 +1,37 @@
+1. En la siguiente tabla asociar el enunciado con la expresión algebraica:
+    A. El área de un triángulo.                                              8. área = (base . altura) / 2;
+    B. El triple de un número incrementado en 5.                             9. 3x + 5;
+    C. La diferencia entre el doble de un número y 3.                        11. 2x - 3;
+    D. La tercera parte de la suma de dos números.                           2. (a + b) / 3;
+    E. El producto de tres números consecutivos.                             10. x * (x + 1) * (x + 2);
+    F. Un número par.                                                        4. 2n;
+    G. El cubo de una suma.                                                  5. (a + b)^3;
+    H. Velocidad es el cociente entre la distancia y el tiempo.              6. v = d / t; 
+    I. La hora de cierre es seis horas después de la apertura.               7. hc = ha + 6;
+    J. La edad actual de un estudiante dentro de 18 años se ha duplicado.    3. e + 18 = 2e;
+    K. Un número impar.                                                      1. 2n + 1;
+    
+
+2. Escribir en lenguaje algebraíco las siguientes expresiones:
+    a. La cantidad aproximada de materias del título intermedio son 3/5 del título de grado;
+    b. Dentro de 22 años la hija tendrá la edad de la madre;
+    c. La diferencia entre dos números;
+    d. La fecha de vencimiento es una semana después de la fecha de emisión de la factura;
+    e. La suma de dos números consecutivos;
+    f. La suma de dos números pares consecutivos;
+    g. La suma de dos números impares consecutivos;
+    h. El cociente de un entero y su antecesor;
+    i. La semisuma de dos cantidades cualesquiera;
+    j. Las tres quintas partes de un número, más la mitad de su sucesor;
+
+Respuestas:
+    a. ti = 3tg / 5;
+    b. em = eh + 22;
+    c. a - b = c;
+    d. fv = fe + 7;
+    e. x + (x + 1);
+    f. 2x + (2x + 2);
+    g. (2x + 1) + (2x + 3);
+    h. x / (x - 1) -> x =/= 1;
+    i. (x + y) / 2;
+    j. 3x / 5 + (x + 1) / 2;
